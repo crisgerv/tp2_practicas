@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Página 1</title>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <hr size="1px" color="black">
+
+        <h2>4 Sentencias mas utilizadas de Git</h2>
+
+        <ul>
+            <li><b>git init</b></li>
+            <p>
+                Permite la creación del repositorio, abriendo la
+                consola en el directorio donde se desea crear el repositorio (preferentemente
+                un directorio vacío). Se puede corroborar que se creó verificando que se haya creado en ese
+                directorio una carpeta con el nombre .git. Es en esta carpeta donde Git
+                almacena todos los cambios y configuraciones de nuestro repositorio.
+            </p>
+
+            <li><b>git status</b></li>
+            <p>
+                Sirve para verificar el estado del repositorio, cada vez que se creen nuevos archivos dentro del
+                repositorio o se modifiquen los ya creados, se podran verificar con esta sentencia.
+            </p>
+
+            <li><b>git add</b></li>
+            <p>
+                Esta sentencia no devuelve ningún resultado. Lo hace es pasar los archivos al estado denominado stage,
+                para luego poder commitearlos. Este comando a su vez acepta otro tipo de parámetros útiles para trabajar
+                con varios archivos a la vez:
+
+            <ul>
+                <li>git add *.jpg agregará todos los archivos cuyo nombre termine en .jpg al área de stage.</li>
+                <li>git add ruta/a/directorio agregará todos los archivos del directorio al área de stage.</li>
+                <li>git add . agregará todos los archivos modificados y/o no trackeados al área de stage.</li>
+            </ul>
+
+            </p>
+
+            <li><b>git commit</b></li>
+            <p>
+                Este comando confirma los cambios del área de stage y los guarda en el repositorio. El parámetro -m es
+                requerido y se utiliza para asociar un mensaje al commit que se este haciendo. Este mensaje va siempre
+                entre comillas dobles. Es muy importante que los mensajes sean lo suficientemente descriptivos a fin de
+                tener un registro de los cambios hechos en el repositorio, donde se hizo cada cambio o conjunto de
+                cambios.
+            </p>
+        </ul>
+
+        <hr size="1px" color="black">
+
+        <p class="back-to-index">Volver a <a href="index.html">Inicio</a></p>
+
+    </div>
+
+</body>
+
+</html>
